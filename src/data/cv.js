@@ -7,8 +7,8 @@ export const profile = {
   linkedin: 'www.linkedin.com/in/hector-jose-perez-624763290 ',
   github: 'https://github.com/Perez8899',
   summary:
-    'Ingeniero de Sistemas y Desarrollador Full Stack con experiencia en desarrollo de aplicaciones' +
-'empresariales utlizando Java, Spring Boot, React y C#. Experiencia en el diseno de APIs REST, ' +
+    'Ingeniero de Sistemas y Desarrollador Full Stack con experiencia en desarrollo de aplicaciones ' +
+'empresariales utlizando Java, Spring Boot, React y C#. Experiencia en el diseño de APIs REST, ' +
 'autenticacion JWT, documentacion con Swagger/OpenAPI, pruebas con Postman y pruevas basadas ' +
 'en arquitectur de microservicios. Con conocimientos en Docker, Git/GitHub, bases de datos ' +
 'relacionales (MSQL,Posgrest y Oracle) y metodologias agiles Scrum.',
