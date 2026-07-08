@@ -9,7 +9,7 @@ export const profile = {
   summary:
     'Ingeniero de Sistemas y Desarrollador Full Stack con experiencia en desarrollo de aplicaciones ' +
 'empresariales utlizando Java, Spring Boot, React y C#. Experiencia en el diseño de APIs REST, ' +
-'autenticacion JWT, documentacion con Swagger/OpenAPI, pruebas con Postman y pruevas basadas ' +
+'autenticacion JWT, documentacion con Swagger/OpenAPI, pruebas con Postman y pruebas basadas ' +
 'en arquitectura de microservicios. Con conocimientos en Docker, Git/GitHub, bases de datos ' +
 'relacionales (MSQL,Posgrest y Oracle) y metodologias agiles Scrum.',
 };
