@@ -8,10 +8,10 @@ export const profile = {
   github: 'https://github.com/Perez8899',
   summary:
     'Ingeniero de Sistemas y Desarrollador Full Stack con experiencia en desarrollo de aplicaciones ' +
-'empresariales utlizando Java, Spring Boot, React y C#. Experiencia en el diseño de APIs REST, ' +
-'autenticacion JWT, documentacion con Swagger/OpenAPI, pruebas con Postman y pruebas basadas ' +
+'empresariales utilizando Java, Spring Boot, React y C#. Experiencia en el diseño de APIs REST, ' +
+'autenticación JWT, documentación con Swagger/OpenAPI, pruebas con Postman y pruebas basadas ' +
 'en arquitectura de microservicios. Con conocimientos en Docker, Git/GitHub, bases de datos ' +
-'relacionales (MSQL,Posgrest y Oracle) y metodologias agiles Scrum.',
+'relacionales (MySQL,PostgreSQL y Oracle) y metodologías ágiles Scrum.',
 };
 
 export const skills = [
