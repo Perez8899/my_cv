@@ -1,4 +1,5 @@
 import { experience } from '../data/cv';
+import ProjectGallery from './ProjectGallery';
 
 export default function Experience() {
   return (
@@ -16,6 +17,9 @@ export default function Experience() {
                 <time>{job.period}</time>
               </div>
               <h3>{job.title}</h3>
+              {job.images?.length > 0 && (
+                <ProjectGallery images={job.images} title={job.title} />
+              )}
               <ul>
                 {job.highlights.map((point) => (
                   <li key={point}>{point}</li>

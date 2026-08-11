@@ -4,7 +4,7 @@ export const profile = {
   email: 'hectorjp43@gmail.com',
   phone: '+506 89448308',
   location: 'Río Cuarto, Alajuela, Costa Rica',
-  linkedin: 'www.linkedin.com/in/hector-jose-perez-624763290 ',
+  linkedin: 'www.linkedin.com/in/hector-jose-perez-624763290',
   github: 'https://github.com/Perez8899',
   summary:
     'Ingeniero de Sistemas y Desarrollador Full Stack con experiencia en desarrollo de aplicaciones ' +
@@ -46,6 +46,11 @@ export const experience = [
     title: 'Ecommerce para Restaurante | Soda Saira',
     type: 'Proyecto Universitario',
     period: 'Sep 2024 – Ago 2025',
+    images: [
+      '/imagenes/homePage.png',
+      '/imagenes/ingredientes.png',
+      '/imagenes/category.png',
+    ],
     highlights: [
       'API RESTful con Spring Boot siguiendo principios REST y documentación OpenAPI.',
       'Autenticación JWT y roles (admin/cliente).',
@@ -57,9 +62,14 @@ export const experience = [
     title: 'Sistema de Inventario',
     type: 'Freelancer',
     period: 'Ago 2025 – Ene 2026',
+    images: [
+      '/imagenes/homeInventario.png',
+      '/imagenes/editarInventario.png',
+      '/imagenes/configInventario.png',
+    ],
     highlights: [
       'Reducción del 70% en tiempo de inventariado manual con Java Spring Boot y React.',
-      'Alertas automáticas de stock mínimo en 3 categorías críticas.',
+      'Alertas automáticas de stock mínimo en categorías críticas, segun la configuracion.',
       'Aplicación contenerizada con Docker.',
     ],
     link: 'https://github.com/Perez8899/inventario_springBoot_Docker',
@@ -68,6 +78,11 @@ export const experience = [
     title: 'Sistema de Compras y Ventas',
     type: 'Freelancer',
     period: 'Sep 2025 – Feb 2026',
+    // images: [
+    //   '/imagenes/sistema-compras-ventas-1.svg',
+    //   '/imagenes/sistema-compras-ventas-2.svg',
+    //   '/imagenes/sistema-compras-ventas-3.svg',
+    // ], 
     highlights: [
       'Automatización del ciclo compras-ventas-inventario con Spring Boot, PostgreSQL y React.',
       'Reducción del 85% en tiempo de facturación manual.',
@@ -81,7 +96,7 @@ export const education = [
   {
     degree: 'Bachiller en Ingeniería de Sistemas',
     institution: 'Universidad Católica de Costa Rica',
-    period: 'Feb 2020 – Ago 2026',
+    period: 'Feb 2020 – 8 de Agosto 2026',
   },
   {
     degree: 'Academia de Inglés (en curso)',
