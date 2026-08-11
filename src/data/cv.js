@@ -1,17 +1,15 @@
 export const profile = {
   name: 'Héctor José Pérez',
-  title: 'Ingeniero de Sistemas · Desarrollador Full Stack',
+  title: 'Ingeniero Backend especializado en Java · Spring Boot' + ' ' +
+'Con experiencia en frontend React para entregar soluciones completas',
   email: 'hectorjp43@gmail.com',
   phone: '+506 89448308',
   location: 'Río Cuarto, Alajuela, Costa Rica',
   linkedin: 'www.linkedin.com/in/hector-jose-perez-624763290',
   github: 'https://github.com/Perez8899',
+  cvPdf: '/cv/Hector_Jose_Perez_CV.pdf',
   summary:
-    'Ingeniero de Sistemas y Desarrollador Full Stack con experiencia en desarrollo de aplicaciones ' +
-'empresariales utilizando Java, Spring Boot, React y C#. Experiencia en el diseño de APIs REST, ' +
-'autenticación JWT, documentación con Swagger/OpenAPI, pruebas con Postman y pruebas basadas ' +
-'en arquitectura de microservicios. Con conocimientos en Docker, Git/GitHub, bases de datos ' +
-'relacionales (MySQL,PostgreSQL y Oracle) y metodologías ágiles Scrum.',
+    'Ingeniero de Sistemas con enfoque obsesivo en el backend Java. Construyo APIs REST robustas con Spring Boot, seguras con JWT y documentadas con OpenAPI. He reducido tiempos de facturación hasta en un 85% optimizando lógica de negocio y consultas SQL. Aunque manejo React para el frontend, mi verdadera pasión es la capa de servicios, la arquitectura de microservicios y la contenerización con Docker para entornos productivos. Busco un equipo donde pueda profundizar en alto rendimiento, concurrencia y patrones de diseño avanzados en Java',
 };
 
 export const skills = [
@@ -21,7 +19,7 @@ export const skills = [
   },
   {
     category: 'Backend',
-    items: ['Java', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'REST APIs', 'JWT', 'C#'],
+    items: ['Java 17+', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'REST APIs', 'JWT', 'Microservicios', 'C#'],
   },
   {
     category: 'Bases de Datos',
@@ -37,7 +35,7 @@ export const skills = [
   },
   {
     category: 'Metodologías Ágiles',
-    items: ['Scrum'],
+    items: ['Scrum, Trabajo colaborativo'],
   },
 ];
 
@@ -52,8 +50,8 @@ export const experience = [
       '/imagenes/category.png',
     ],
     highlights: [
+      'Diseñé la arquitectura de capas (Controller-Service-Repository) con Spring Boot. Implementé autenticación JWT, roles(admin/cliente) con filtros personalizados y manejo global de excepciones',
       'API RESTful con Spring Boot siguiendo principios REST y documentación OpenAPI.',
-      'Autenticación JWT y roles (admin/cliente).',
       'Desarrollo full-stack: backend Java Spring Boot, frontend React y MySQL.',
     ],
     link: 'https://github.com/Perez8899/foodOrderinPerezJavaSpring/tree/master',
@@ -96,7 +94,8 @@ export const education = [
   {
     degree: 'Bachiller en Ingeniería de Sistemas',
     institution: 'Universidad Católica de Costa Rica',
-    period: 'Feb 2020 – 8 de Agosto 2026',
+    period: 'Feb 2020 – Ago 2026',
+    badge: 'graduation',
   },
   {
     degree: 'Academia de Inglés (en curso)',

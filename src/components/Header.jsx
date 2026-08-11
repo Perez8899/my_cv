@@ -17,25 +17,35 @@ export default function Header() {
           <span className="logo__text">{profile.name.split(' ')[0]}</span>
         </button>
 
-        <button
-          type="button"
-          className="nav-toggle"
-          aria-label="Abrir menú"
-          aria-expanded={open}
-          onClick={() => setOpen(!open)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <div className="header__actions">
+          <a
+            href={profile.cvPdf}
+            download="Hector_Jose_Perez_CV.pdf"
+            className="header__cv"
+          >
+            Descargar CV
+          </a>
 
-        <nav className={`nav ${open ? 'nav--open' : ''}`}>
-          {navLinks.map((link) => (
-            <button key={link.id} type="button" onClick={() => scrollTo(link.id)}>
-              {link.label}
-            </button>
-          ))}
-        </nav>
+          <button
+            type="button"
+            className="nav-toggle"
+            aria-label="Abrir menú"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+
+          <nav className={`nav ${open ? 'nav--open' : ''}`}>
+            {navLinks.map((link) => (
+              <button key={link.id} type="button" onClick={() => scrollTo(link.id)}>
+                {link.label}
+              </button>
+            ))}
+          </nav>
+        </div>
       </div>
     </header>
   );

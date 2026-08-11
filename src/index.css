@@ -148,6 +148,31 @@ img {
   font-weight: 600;
 }
 
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header__cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.header__cv:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
 .nav {
   display: flex;
   gap: 0.25rem;
@@ -525,6 +550,40 @@ img {
   margin: 0.35rem 0;
 }
 
+.edu-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin: 0.35rem 0;
+}
+
+.edu-card__header h4 {
+  margin: 0;
+}
+
+.edu-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.edu-badge svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 /* Contact */
 .contact {
   background: var(--surface-dark);
@@ -581,6 +640,11 @@ img {
 
 .contact__item strong {
   font-weight: 600;
+}
+
+.contact__item--cv {
+  border-color: rgba(184, 92, 56, 0.35);
+  background: rgba(184, 92, 56, 0.1);
 }
 
 /* Footer */
@@ -644,6 +708,11 @@ img {
 
   .header__inner {
     position: relative;
+  }
+
+  .header__cv {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.82rem;
   }
 
   .section {

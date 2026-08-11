@@ -14,6 +14,14 @@ export default function Contact() {
         </div>
 
         <div className="contact__links">
+          <a
+            href={profile.cvPdf}
+            download="Hector_Jose_Perez_CV.pdf"
+            className="contact__item contact__item--cv"
+          >
+            <span>Currículum</span>
+            <strong>Descargar PDF</strong>
+          </a>
           <a href={`mailto:${profile.email}`} className="contact__item">
             <span>Email</span>
             <strong>{profile.email}</strong>

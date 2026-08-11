@@ -11,7 +11,14 @@ export default function Hero() {
           <p className="hero__location">{profile.location}</p>
 
           <div className="hero__actions">
-            <a href="#experiencia" className="btn btn--primary">
+            <a
+              href={profile.cvPdf}
+              download="Hector-Jose-Perez-CV.pdf"
+              className="btn btn--primary"
+            >
+              Descargar CV
+            </a>
+            <a href="#experiencia" className="btn btn--ghost">
               Ver proyectos
             </a>
             <a href={profile.github} target="_blank" rel="noreferrer" className="btn btn--ghost">

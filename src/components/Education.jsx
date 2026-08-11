@@ -16,7 +16,17 @@ export default function Education() {
               {education.map((item) => (
                 <article key={item.degree} className="edu-card">
                   <time>{item.period}</time>
-                  <h4>{item.degree}</h4>
+                  <div className="edu-card__header">
+                    <h4>{item.degree}</h4>
+                    {item.badge === 'graduation' && (
+                      <span className="edu-badge" aria-label="Titulación universitaria">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                          <path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5" />
+                        </svg>
+                      </span>
+                    )}
+                  </div>
                   <p>{item.institution}</p>
                 </article>
               ))}
