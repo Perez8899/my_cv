@@ -1,23 +1,26 @@
+import { useTranslation } from 'react-i18next';
 import { certifications, education } from '../data/cv';
 
 export default function Education() {
+  const { t } = useTranslation();
+
   return (
     <section id="educacion" className="section section--alt">
       <div className="container">
         <div className="section__header">
-          <p className="eyebrow">Formación</p>
-          <h2>Educación y certificaciones</h2>
+          <p className="eyebrow">{t('section.education.eyebrow')}</p>
+          <h2>{t('section.education.title')}</h2>
         </div>
 
         <div className="edu__grid">
           <div>
-            <h3 className="edu__subtitle">Educación</h3>
+            <h3 className="edu__subtitle">{t('section.education.eduSubtitle')}</h3>
             <div className="edu__list">
               {education.map((item) => (
                 <article key={item.degree} className="edu-card">
-                  <time>{item.period}</time>
+                  <time>{t(`education.${item.id === 'degree' ? 'period' : 'englishPeriod'}`)}</time>
                   <div className="edu-card__header">
-                    <h4>{item.degree}</h4>
+                    <h4>{t(`education.${item.id === 'degree' ? 'degree' : 'english'}`)}</h4>
                     {item.badge === 'graduation' && (
                       <span className="edu-badge" aria-label="Titulación universitaria">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -27,14 +30,14 @@ export default function Education() {
                       </span>
                     )}
                   </div>
-                  <p>{item.institution}</p>
+                  <p>{t(`education.${item.id === 'degree' ? 'institution' : 'englishInst'}`)}</p>
                 </article>
               ))}
             </div>
           </div>
 
           <div>
-            <h3 className="edu__subtitle">Certificaciones</h3>
+            <h3 className="edu__subtitle">{t('section.education.certSubtitle')}</h3>
             <div className="cert__list">
               {certifications.map((cert) => (
                 <article key={cert.name} className="cert-card">

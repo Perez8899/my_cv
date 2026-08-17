@@ -1,41 +1,43 @@
+import { useTranslation } from 'react-i18next';
 import { profile } from '../data/cv';
 
 export default function Contact() {
+  const { t, i18n } = useTranslation();
+  const cvUrl = i18n.language === 'en' ? profile.cvPdfEn : profile.cvPdf;
+  const cvFilename = i18n.language === 'en' ? 'Hector_Jose_Perez_CV_EN.pdf' : 'Hector_Jose_Perez_CV.pdf';
+
   return (
     <section id="contacto" className="section contact">
       <div className="container contact__inner">
         <div>
-          <p className="eyebrow">¿Trabajamos juntos?</p>
-          <h2>Contacto</h2>
-          <p className="contact__text">
-            Disponible para proyectos full-stack, APIs REST y soluciones empresariales con Java, C# y
-            React.
-          </p>
+          <p className="eyebrow">{t('contact.eyebrow')}</p>
+          <h2>{t('contact.title')}</h2>
+          <p className="contact__text">{t('contact.text')}</p>
         </div>
 
         <div className="contact__links">
           <a
-            href={profile.cvPdf}
-            download="Hector_Jose_Perez_CV.pdf"
+            href={cvUrl}
+            download={cvFilename}
             className="contact__item contact__item--cv"
           >
-            <span>Currículum</span>
-            <strong>Descargar PDF</strong>
+            <span>{t('contact.cvLabel')}</span>
+            <strong>{t('contact.cvDownload')}</strong>
           </a>
           <a href={`mailto:${profile.email}`} className="contact__item">
-            <span>Email</span>
+            <span>{t('contact.email')}</span>
             <strong>{profile.email}</strong>
           </a>
           <a href={`tel:${profile.phone.replace(/\s/g, '')}`} className="contact__item">
-            <span>Teléfono</span>
+            <span>{t('contact.phone')}</span>
             <strong>{profile.phone}</strong>
           </a>
           <a href={profile.linkedin} target="_blank" rel="noreferrer" className="contact__item">
-            <span>LinkedIn</span>
+            <span>{t('contact.linkedin')}</span>
             <strong>hector-jose-perez</strong>
           </a>
           <a href={profile.github} target="_blank" rel="noreferrer" className="contact__item">
-            <span>GitHub</span>
+            <span>{t('contact.github')}</span>
             <strong>@Perez8899</strong>
           </a>
         </div>

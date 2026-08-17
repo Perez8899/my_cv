@@ -205,6 +205,63 @@ img {
   border-radius: 2px;
 }
 
+/* estilos para el switcher de idioma */
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: transparent;
+  border: 2px solid var(--color-primary, #4F46E5);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  color: var(--color-text, #1f2937);
+  margin-right: 12px;
+}
+
+.language-switcher:hover {
+  background: var(--color-primary, #4F46E5);
+  color: white;
+  transform: scale(1.05);
+}
+
+.language-switcher .language-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.language-switcher .language-code {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.language-switcher.rotating .language-flag {
+  animation: spin 0.5s ease;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .language-switcher {
+    padding: 6px 10px;
+    font-size: 11px;
+    margin-right: 8px;
+  }
+  
+  .language-switcher .language-flag {
+    font-size: 16px;
+  }
+}
+
 /* Hero */
 .hero {
   padding: 4rem 0 5rem;

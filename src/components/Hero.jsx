@@ -1,25 +1,30 @@
+import { useTranslation } from 'react-i18next';
 import { profile } from '../data/cv';
 
 export default function Hero() {
+  const { t, i18n } = useTranslation();
+  const cvUrl = i18n.language === 'en' ? profile.cvPdfEn : profile.cvPdf;
+  const cvFilename = i18n.language === 'en' ? 'Hector-Jose-Perez-CV-EN.pdf' : 'Hector-Jose-Perez-CV.pdf';
+
   return (
     <section id="inicio" className="hero">
       <div className="container hero__grid">
         <div className="hero__content">
-          <p className="eyebrow">Portafolio profesional</p>
+          <p className="eyebrow">{t('hero.eyebrow')}</p>
           <h1>{profile.name}</h1>
-          <p className="hero__title">{profile.title}</p>
+          <p className="hero__title">{t('profile.title')}</p>
           <p className="hero__location">{profile.location}</p>
 
           <div className="hero__actions">
             <a
-              href={profile.cvPdf}
-              download="Hector-Jose-Perez-CV.pdf"
+              href={cvUrl}
+              download={cvFilename}
               className="btn btn--primary"
             >
-              Descargar CV
+              {t('hero.downloadCv')}
             </a>
             <a href="#experiencia" className="btn btn--ghost">
-              Ver proyectos
+              {t('hero.viewProjects')}
             </a>
             <a href={profile.github} target="_blank" rel="noreferrer" className="btn btn--ghost">
               GitHub
@@ -34,7 +39,7 @@ export default function Hero() {
           <ul className="hero__stats">
             <li>
               <strong>3+</strong>
-              <span>Proyectos full-stack</span>
+              <span>{t('hero.stat.projects')}</span>
             </li>
             <li>
               <strong>Java</strong>
@@ -42,7 +47,7 @@ export default function Hero() {
             </li>
             <li>
               <strong>Docker</strong>
-              <span>Despliegue contenerizado</span>
+              <span>{t('hero.stat.docker')}</span>
             </li>
           </ul>
         </div>

@@ -1,8 +1,13 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { navLinks, profile } from '../data/cv';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const cvUrl = i18n.language === 'en' ? profile.cvPdfEn : profile.cvPdf;
+  const cvFilename = i18n.language === 'en' ? 'Hector_Jose_Perez_CV_EN.pdf' : 'Hector_Jose_Perez_CV.pdf';
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -19,17 +24,19 @@ export default function Header() {
 
         <div className="header__actions">
           <a
-            href={profile.cvPdf}
-            download="Hector_Jose_Perez_CV.pdf"
+            href={cvUrl}
+            download={cvFilename}
             className="header__cv"
           >
-            Descargar CV
+            {t('profile.downloadCv')}
           </a>
+
+          <LanguageSwitcher />
 
           <button
             type="button"
             className="nav-toggle"
-            aria-label="Abrir menú"
+            aria-label={t('header.openMenu')}
             aria-expanded={open}
             onClick={() => setOpen(!open)}
           >
@@ -41,7 +48,7 @@ export default function Header() {
           <nav className={`nav ${open ? 'nav--open' : ''}`}>
             {navLinks.map((link) => (
               <button key={link.id} type="button" onClick={() => scrollTo(link.id)}>
-                {link.label}
+                {t(`nav.${link.id}`)}
               </button>
             ))}
           </nav>
