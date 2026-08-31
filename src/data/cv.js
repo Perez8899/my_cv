@@ -5,7 +5,7 @@ export const profile = {
   email: 'hectorjp43@gmail.com',
   phone: '+506 89448308',
   location: 'Río Cuarto, Alajuela, Costa Rica',
-  linkedin: 'www.linkedin.com/in/hector-jose-perez-624763290',
+  linkedin: 'https://www.linkedin.com/in/hector-jose-perez-624763290',
   github: 'https://github.com/Perez8899',
   cvPdf: '/cv/Hector_Jose_Perez_CV.pdf',
   cvPdfEn: '/cv/Hector_Jose_Perez_CV_EN.pdf',
