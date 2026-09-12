@@ -1,54 +1,53 @@
 export const profile = {
   name: 'Héctor José Pérez',
-  title: 'Ingeniero Backend especializado en Java · Spring Boot' + ' ' +
-'Con experiencia en frontend React para entregar soluciones completas',
+  title: 'Ingeniero de Sistemas · Desarrollador Backend especializado en Java · Spring Boot',
   email: 'hectorjp43@gmail.com',
-  phone: '+506 89448308',
+  phone: '+506 8944-8308',
   location: 'Río Cuarto, Alajuela, Costa Rica',
   linkedin: 'https://www.linkedin.com/in/hector-jose-perez-624763290',
   github: 'https://github.com/Perez8899',
   cvPdf: '/cv/Hector_Jose_Perez_CV.pdf',
-  cvPdfEn: '/cv/Hector_Jose_Perez_CV_EN.pdf',
   summary:
-    'Ingeniero de Sistemas con enfoque obsesivo en el backend Java. Construyo APIs REST robustas con Spring Boot, seguras con JWT y documentadas con OpenAPI. He reducido tiempos de facturación hasta en un 85% optimizando lógica de negocio y consultas SQL. Aunque manejo React para el frontend, mi verdadera pasión es la capa de servicios, la arquitectura de microservicios y la contenerización con Docker para entornos productivos. Busco un equipo donde pueda profundizar en alto rendimiento, concurrencia y patrones de diseño avanzados en Java',
+    'Ingeniero de Sistemas con enfoque obsesivo en el backend Java. Construyo APIs REST robustas con Spring Boot, seguras con JWT y documentadas con OpenAPI. He reducido tiempos de facturación hasta en un 85% optimizando lógica de negocio y consultas SQL. Aunque manejo React para el frontend, mi verdadera pasión es la capa de servicios, la arquitectura de microservicios y la contenerización con Docker para entornos productivos. Actualmente en preparación para la certificación AWS Certified Cloud Practitioner. Busco un equipo donde pueda profundizar en alto rendimiento, concurrencia y patrones de diseño avanzados en Java',
 };
 
 export const skills = [
   {
-    id: 'frontend',
-    category: 'Frontend',
-    items: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'React', 'ASP.NET Core (MVC)'],
-  },
-  {
     id: 'backend',
     category: 'Backend',
-    items: ['Java 17+', 'Spring Boot', 'Spring Security', 'JPA/Hibernate', 'REST APIs', 'JWT', 'skills.item.microservices', 'C#'],
+    items: ['javaSeventeen', 'springBoot', 'springSecurity', 'jpaHibernate', 'restApis', 'jwt', 'microservices', 'csharp'],
   },
   {
     id: 'databases',
     category: 'Bases de Datos',
-    items: ['MySQL', 'PostgreSQL', 'Oracle', 'skills.item.sqlOptimization'],
+    items: ['mysql', 'postgresql', 'oracle', 'sqlOptimization'],
   },
   {
     id: 'devops',
     category: 'DevOps & Cloud',
-    items: ['Docker', 'Docker Compose', 'Git', 'GitHub', 'Git Flow'],
+    items: ['docker', 'dockerCompose', 'git', 'github', 'gitFlow', 'awsInProgress'],
+  },
+  {
+    id: 'frontend',
+    category: 'Frontend',
+    items: ['html5', 'css3', 'bootstrap', 'javascript', 'react', 'aspnetCore'],
   },
   {
     id: 'api',
     category: 'API & Testing',
-    items: ['Postman', 'Swagger/OpenAPI', 'JSON'],
+    items: ['postman', 'swaggerOpenapi', 'json'],
   },
   {
     id: 'methodologies',
     category: 'Metodologías Ágiles',
-    items: ['skills.item.scrum'],
+    items: ['scrum', 'collaborativeWork'],
   },
 ];
 
 export const experience = [
   {
     id: 'ecommerce',
+    category: 'academic',
     title: 'Ecommerce para Restaurante | Soda Saira',
     type: 'Proyecto Universitario',
     period: 'Sep 2024 – Ago 2025',
@@ -66,6 +65,7 @@ export const experience = [
   },
   {
     id: 'inventory',
+    category: 'professional',
     title: 'Sistema de Inventario',
     type: 'Freelancer',
     period: 'Ago 2025 – Ene 2026',
@@ -76,13 +76,14 @@ export const experience = [
     ],
     highlights: [
       'Reducción del 70% en tiempo de inventariado manual con Java Spring Boot y React.',
-      'Alertas automáticas de stock mínimo en categorías críticas, segun la configuracion.',
+      'Alertas automáticas de stock mínimo en categorías críticas, según la configuración establecida.',
       'Aplicación contenerizada con Docker.',
     ],
     link: 'https://github.com/Perez8899/inventario_springBoot_Docker',
   },
   {
     id: 'sales',
+    category: 'professional',
     title: 'Sistema de Compras y Ventas',
     type: 'Freelancer',
     period: 'Sep 2025 – Feb 2026',
@@ -117,6 +118,7 @@ export const education = [
 ];
 
 export const certifications = [
+  { id: 'aws', name: 'AWS Certified Cloud Practitioner', issuer: 'En preparación', date: 'Examen próximo' },
   { name: 'Desarrollo Backend API REST con Spring Boot', issuer: 'Blumbit', date: 'Nov 2025' },
   { name: 'Diseño y Análisis Bases de Datos Relacional (SQL) y NoSQL', issuer: 'Blumbit', date: 'Sep 2025' },
   { name: 'Docker y Docker Compose', issuer: 'Blumbit', date: 'Sep 2025' },

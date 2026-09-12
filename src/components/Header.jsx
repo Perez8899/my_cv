@@ -5,9 +5,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const { t, i18n } = useTranslation();
-  const cvUrl = i18n.language === 'en' ? profile.cvPdfEn : profile.cvPdf;
-  const cvFilename = i18n.language === 'en' ? 'Hector_Jose_Perez_CV_EN.pdf' : 'Hector_Jose_Perez_CV.pdf';
+  const { t } = useTranslation();
 
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -24,8 +22,8 @@ export default function Header() {
 
         <div className="header__actions">
           <a
-            href={cvUrl}
-            download={cvFilename}
+            href={profile.cvPdf}
+            download="Hector_Jose_Perez_CV.pdf"
             className="header__cv"
           >
             {t('profile.downloadCv')}

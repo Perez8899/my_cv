@@ -12,9 +12,9 @@ export const resources = {
   
         // Perfil
         "profile.name": "Héctor José Pérez",
-        "profile.title": "Ingeniero Backend especializado en Java · Spring Boot",
-        "profile.title2": "Con experiencia en frontend React para entregar soluciones completas",
-        "profile.summary": "Ingeniero de Sistemas con enfoque obsesivo en el backend Java. Construyo APIs REST robustas con Spring Boot, seguras con JWT y documentadas con OpenAPI. He reducido tiempos de facturación hasta en un 85% optimizando lógica de negocio y consultas SQL. Aunque manejo React para el frontend, mi verdadera pasión es la capa de servicios, la arquitectura de microservicios y la contenerización con Docker para entornos productivos. Busco un equipo donde pueda profundizar en alto rendimiento, concurrencia y patrones de diseño avanzados en Java",
+        "profile.title": "Ingeniero de Sistemas · Desarrollador Backend especializado en Java · Spring Boot",
+        "profile.title2": "También trabajo con React en el frontend para entregar soluciones completas",
+        "profile.summary": "Ingeniero de Sistemas con enfoque obsesivo en el backend Java. Construyo APIs REST robustas con Spring Boot, seguras con JWT y documentadas con OpenAPI. He reducido tiempos de facturación hasta en un 85% optimizando lógica de negocio y consultas SQL. Aunque manejo React para el frontend, mi verdadera pasión es la capa de servicios, la arquitectura de microservicios y la contenerización con Docker para entornos productivos. Actualmente en preparación para la certificación AWS Certified Cloud Practitioner. Busco un equipo donde pueda profundizar en alto rendimiento, concurrencia y patrones de diseño avanzados en Java",
         "profile.downloadCv": "Descargar CV",
   
         // Habilidades
@@ -24,9 +24,37 @@ export const resources = {
         "skills.devops": "DevOps & Cloud",
         "skills.api": "API & Testing",
         "skills.methodologies": "Metodologías Ágiles",
+
+        // Habilidades (ítems)
+        "skills.item.javaSeventeen": "Java 17+",
+        "skills.item.springBoot": "Spring Boot",
+        "skills.item.springSecurity": "Spring Security",
+        "skills.item.jpaHibernate": "JPA/Hibernate",
+        "skills.item.restApis": "REST APIs",
+        "skills.item.jwt": "JWT",
         "skills.item.microservices": "Microservicios",
-        "skills.item.sqlOptimization": "SQL Optimización",
-        "skills.item.scrum": "Scrum, Trabajo colaborativo",
+        "skills.item.csharp": "C#",
+        "skills.item.mysql": "MySQL",
+        "skills.item.postgresql": "PostgreSQL",
+        "skills.item.oracle": "Oracle",
+        "skills.item.sqlOptimization": "Optimización de SQL",
+        "skills.item.docker": "Docker",
+        "skills.item.dockerCompose": "Docker Compose",
+        "skills.item.git": "Git",
+        "skills.item.github": "GitHub",
+        "skills.item.gitFlow": "Git Flow",
+        "skills.item.awsInProgress": "AWS (en preparación)",
+        "skills.item.html5": "HTML5",
+        "skills.item.css3": "CSS3",
+        "skills.item.bootstrap": "Bootstrap",
+        "skills.item.javascript": "JavaScript",
+        "skills.item.react": "React",
+        "skills.item.aspnetCore": "ASP.NET Core (MVC)",
+        "skills.item.postman": "Postman",
+        "skills.item.swaggerOpenapi": "Swagger/OpenAPI",
+        "skills.item.json": "JSON",
+        "skills.item.scrum": "Scrum",
+        "skills.item.collaborativeWork": "Trabajo colaborativo",
   
         // Experiencia
         "experience.ecommerce.title": "Ecommerce para Restaurante | Soda Saira",
@@ -40,7 +68,7 @@ export const resources = {
         "experience.inventory.type": "Freelancer",
         "experience.inventory.period": "Ago 2025 – Ene 2026",
         "experience.inventory.highlight1": "Reducción del 70% en tiempo de inventariado manual con Java Spring Boot y React.",
-        "experience.inventory.highlight2": "Alertas automáticas de stock mínimo en categorías críticas, segun la configuracion.",
+        "experience.inventory.highlight2": "Alertas automáticas de stock mínimo en categorías críticas, según la configuración establecida.",
         "experience.inventory.highlight3": "Aplicación contenerizada con Docker.",
   
         "experience.sales.title": "Sistema de Compras y Ventas",
@@ -60,6 +88,9 @@ export const resources = {
   
         // Certificaciones
         "certifications.title": "Certificaciones",
+        "certifications.aws.name": "AWS Certified Cloud Practitioner",
+        "certifications.aws.issuer": "En preparación",
+        "certifications.aws.date": "Examen próximo",
   
         // Contacto
         "contact.title": "Contacto",
@@ -87,6 +118,8 @@ export const resources = {
         "section.skills.title": "Habilidades",
         "section.experience.eyebrow": "Trayectoria",
         "section.experience.title": "Experiencia profesional",
+        "section.academic.eyebrow": "Formación práctica",
+        "section.academic.title": "Proyectos académicos",
         "section.education.eyebrow": "Formación",
         "section.education.title": "Educación y certificaciones",
         "section.education.eduSubtitle": "Educación",
@@ -115,9 +148,9 @@ export const resources = {
   
         // Profile
         "profile.name": "Héctor José Pérez",
-        "profile.title": "Backend Engineer specialized in Java · Spring Boot",
-        "profile.title2": "With React frontend experience to deliver complete solutions",
-        "profile.summary": "Systems Engineer with an obsessive focus on Java backend. I build robust REST APIs with Spring Boot, secured with JWT and documented with OpenAPI. I have reduced billing times by up to 85% by optimizing business logic and SQL queries. Although I handle React for the frontend, my true passion is the service layer, microservices architecture, and containerization with Docker for production environments. I'm looking for a team where I can deepen my knowledge in high performance, concurrency, and advanced design patterns in Java",
+        "profile.title": "Systems Engineer · Backend Developer specialized in Java · Spring Boot",
+        "profile.title2": "Also work with React on the frontend to deliver complete solutions",
+        "profile.summary": "Systems Engineer with an obsessive focus on Java backend. I build robust REST APIs with Spring Boot, secured with JWT and documented with OpenAPI. I have reduced billing times by up to 85% by optimizing business logic and SQL queries. Although I handle React for the frontend, my true passion is the service layer, microservices architecture, and containerization with Docker for production environments. Currently preparing for the AWS Certified Cloud Practitioner certification. I'm looking for a team where I can deepen my knowledge in high performance, concurrency, and advanced design patterns in Java",
         "profile.downloadCv": "Download CV",
   
         // Skills
@@ -127,9 +160,37 @@ export const resources = {
         "skills.devops": "DevOps & Cloud",
         "skills.api": "API & Testing",
         "skills.methodologies": "Agile Methodologies",
+
+        // Skills (items)
+        "skills.item.javaSeventeen": "Java 17+",
+        "skills.item.springBoot": "Spring Boot",
+        "skills.item.springSecurity": "Spring Security",
+        "skills.item.jpaHibernate": "JPA/Hibernate",
+        "skills.item.restApis": "REST APIs",
+        "skills.item.jwt": "JWT",
         "skills.item.microservices": "Microservices",
+        "skills.item.csharp": "C#",
+        "skills.item.mysql": "MySQL",
+        "skills.item.postgresql": "PostgreSQL",
+        "skills.item.oracle": "Oracle",
         "skills.item.sqlOptimization": "SQL Optimization",
-        "skills.item.scrum": "Scrum, collaborative work",
+        "skills.item.docker": "Docker",
+        "skills.item.dockerCompose": "Docker Compose",
+        "skills.item.git": "Git",
+        "skills.item.github": "GitHub",
+        "skills.item.gitFlow": "Git Flow",
+        "skills.item.awsInProgress": "AWS (in progress)",
+        "skills.item.html5": "HTML5",
+        "skills.item.css3": "CSS3",
+        "skills.item.bootstrap": "Bootstrap",
+        "skills.item.javascript": "JavaScript",
+        "skills.item.react": "React",
+        "skills.item.aspnetCore": "ASP.NET Core (MVC)",
+        "skills.item.postman": "Postman",
+        "skills.item.swaggerOpenapi": "Swagger/OpenAPI",
+        "skills.item.json": "JSON",
+        "skills.item.scrum": "Scrum",
+        "skills.item.collaborativeWork": "Collaborative work",
   
         // Experience
         "experience.ecommerce.title": "Ecommerce for Restaurant | Soda Saira",
@@ -143,7 +204,7 @@ export const resources = {
         "experience.inventory.type": "Freelancer",
         "experience.inventory.period": "Aug 2025 – Jan 2026",
         "experience.inventory.highlight1": "70% reduction in manual inventory time with Java Spring Boot and React.",
-        "experience.inventory.highlight2": "Automatic low-stock alerts in critical categories, based on configuration.",
+        "experience.inventory.highlight2": "Automatic low-stock alerts in critical categories, based on configurable thresholds.",
         "experience.inventory.highlight3": "Containerized application with Docker.",
   
         "experience.sales.title": "Purchase and Sales System",
@@ -163,6 +224,9 @@ export const resources = {
   
         // Certifications
         "certifications.title": "Certifications",
+        "certifications.aws.name": "AWS Certified Cloud Practitioner",
+        "certifications.aws.issuer": "In preparation",
+        "certifications.aws.date": "Exam scheduled soon",
   
         // Contact
         "contact.title": "Contact",
@@ -190,6 +254,8 @@ export const resources = {
         "section.skills.title": "Skills",
         "section.experience.eyebrow": "Career path",
         "section.experience.title": "Professional Experience",
+        "section.academic.eyebrow": "Applied learning",
+        "section.academic.title": "Academic Projects",
         "section.education.eyebrow": "Education",
         "section.education.title": "Education and certifications",
         "section.education.eduSubtitle": "Education",

@@ -17,9 +17,7 @@ export default function Skills() {
               <h3>{t(`skills.${group.id}`)}</h3>
               <ul>
                 {group.items.map((item) => (
-                  <li key={item}>
-                    {item.startsWith('skills.item.') ? t(item) : item}
-                  </li>
+                  <li key={item}>{t(`skills.item.${item}`)}</li>
                 ))}
               </ul>
             </article>

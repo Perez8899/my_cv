@@ -2,9 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { profile } from '../data/cv';
 
 export default function Hero() {
-  const { t, i18n } = useTranslation();
-  const cvUrl = i18n.language === 'en' ? profile.cvPdfEn : profile.cvPdf;
-  const cvFilename = i18n.language === 'en' ? 'Hector-Jose-Perez-CV-EN.pdf' : 'Hector-Jose-Perez-CV.pdf';
+  const { t } = useTranslation();
 
   return (
     <section id="inicio" className="hero">
@@ -13,12 +11,13 @@ export default function Hero() {
           <p className="eyebrow">{t('hero.eyebrow')}</p>
           <h1>{profile.name}</h1>
           <p className="hero__title">{t('profile.title')}</p>
+          <p className="hero__subtitle">{t('profile.title2')}</p>
           <p className="hero__location">{profile.location}</p>
 
           <div className="hero__actions">
             <a
-              href={cvUrl}
-              download={cvFilename}
+              href={profile.cvPdf}
+              download="Hector-Jose-Perez-CV.pdf"
               className="btn btn--primary"
             >
               {t('hero.downloadCv')}

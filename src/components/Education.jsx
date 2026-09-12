@@ -42,9 +42,10 @@ export default function Education() {
               {certifications.map((cert) => (
                 <article key={cert.name} className="cert-card">
                   <div>
-                    <h4>{cert.name}</h4>
+                    <h4>{cert.id === 'aws' ? t('certifications.aws.name') : cert.name}</h4>
                     <p>
-                      {cert.issuer} · {cert.date}
+                      {cert.id === 'aws' ? t('certifications.aws.issuer') : cert.issuer} ·{' '}
+                      {cert.id === 'aws' ? t('certifications.aws.date') : cert.date}
                     </p>
                   </div>
                 </article>

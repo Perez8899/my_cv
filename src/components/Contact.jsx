@@ -2,9 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { profile } from '../data/cv';
 
 export default function Contact() {
-  const { t, i18n } = useTranslation();
-  const cvUrl = i18n.language === 'en' ? profile.cvPdfEn : profile.cvPdf;
-  const cvFilename = i18n.language === 'en' ? 'Hector_Jose_Perez_CV_EN.pdf' : 'Hector_Jose_Perez_CV.pdf';
+  const { t } = useTranslation();
 
   return (
     <section id="contacto" className="section contact">
@@ -17,8 +15,8 @@ export default function Contact() {
 
         <div className="contact__links">
           <a
-            href={cvUrl}
-            download={cvFilename}
+            href={profile.cvPdf}
+            download="Hector_Jose_Perez_CV.pdf"
             className="contact__item contact__item--cv"
           >
             <span>{t('contact.cvLabel')}</span>
